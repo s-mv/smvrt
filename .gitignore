@@ -1,0 +1,12 @@
+*.o
+*.elf
+*.img
+
+# just in case
+
+*~
+.DS_Store
+
+.vscode/
+.idea/
+
