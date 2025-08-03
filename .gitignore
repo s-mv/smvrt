@@ -1,6 +1,6 @@
-*.o
-*.elf
-*.img
+build
+compile_commands.json
+.cache
 
 # just in case
 
@@ -9,4 +9,3 @@
 
 .vscode/
 .idea/
-
