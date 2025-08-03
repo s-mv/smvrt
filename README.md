@@ -3,8 +3,12 @@ A minimal RTOS for Raspberry Pi written in C and ARM assembly.
 
 Runs two tasks with basic context switching. Built for learning and fun.
 
+![(this is a screenshot)](./screen.jpg)
+
 ## Current Features
-- Bare-metal kernel that runs on `qemu`
+- Bare-metal kernel that runs on `qemu` (to be tested on hardware)
+- Basic cross-platform architecture: [ARCHITECTURE.md](./docs/ARCHITECTURE.md)
+- Basic scheduling, context switching
 
 ## Build Instructions
 ```bash
@@ -22,8 +26,8 @@ Currently, the [Makefile](/Makefile) doesn't have any customization. This is a T
 ```bash
 sudo pacman -S qemu-arch-extra # if not installed
 make                           # build smvrt.img
-qemu-system-arm -M raspi2 -kernel smvrt.img -serial stdio -nographic
+make run
 ```
 
-Currently, the interface only works on a hypervisor.
+Currently, the interface is only tested on a hypervisor.
 
